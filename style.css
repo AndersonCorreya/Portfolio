@@ -1,3 +1,14 @@
+@media (max-width: 768px) {
+  .text-body-emphasis {
+      font-size: 1.5rem; /* Adjust font sizes for readability on smaller screens */
+  }
+  .profilepicture {
+      max-width: 100%; /* Ensure images resize properly */
+      height: auto;
+  }
+}
+
+
 section>div {
     border:1px solid transparent
 }
