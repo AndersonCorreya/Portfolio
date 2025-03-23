@@ -60,14 +60,15 @@
                         </h1>
                         <p class="description mb-4">Aspiring engineer in final year of studies, passionate about applying technical skills to solve real-world problems. Eager to put knowledge into practice through internships and projects.</p>
                         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                            <a href="#projects" class="btn btn-primary">View Projects</a>
-                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                            <!-- Changed to button with onclick handler for direct control -->
+                            <button onclick="scrollToSection('projects')" class="btn btn-primary">View Projects</button>
+                            <button onclick="scrollToSection('contact')" class="btn btn-secondary">Contact Me</button>
                         </div>
                         <div class="social-icons mt-5">
-                            <a href="https://github.com/AndersonCorreya" target="_blank" aria-label="GitHub" class="social-icon">
+                            <a href="https://github.com/AndersonCorreya" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/andersoncorreya14/" target="_blank" aria-label="LinkedIn" class="social-icon">
+                            <a href="https://www.linkedin.com/in/andersoncorreya14/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                             <a href="mailto:bervincorreya@gmail.com" aria-label="Email" class="social-icon">
@@ -98,8 +99,8 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
                         <div class="about-text">
-                            <p class="lead">I'm a passionate engineering student with a focus on creating innovative solutions to real-world problems.</p>
-                            <p>My journey in technology has equipped me with a strong foundation in technical skills and a keen eye for detail. I believe in continuous learning and pushing the boundaries of what's possible through creative problem-solving.</p>
+                            <p class="lead">I am a passionate mobile developer with expertise in Flutter, Dart, and Kotlin, dedicated to creating seamless, high-performance applications.</p>
+                            <p>With experience in building intuitive and scalable mobile solutions, I specialize in developing cross-platform apps that enhance user experience. I have a strong foundation in backend integration, UI/UX design, and cloud services.</p>
                             <div class="skills-container">
                                 <h3 class="skills-title">My Skills</h3>
                                 <div class="skill-pills">
@@ -154,15 +155,16 @@
                                 <h3 class="card-title">FriendCircle</h3>
                                 <p class="card-text">A social networking platform that connects people with similar interests. Features include real-time messaging, user profiles, and interest-based communities.</p>
                                 <div class="tech-stack">
-                                    <span class="tech-badge">React</span>
-                                    <span class="tech-badge">Node.js</span>
-                                    <span class="tech-badge">MongoDB</span>
+                                    <span class="tech-badge">Flutter</span>
+                                    <span class="tech-badge">Firebase</span>
+                                    <span class="tech-badge">Firestore</span>
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <a href="https://github.com/AndersonCorreya/FriendCircle" class="btn btn-project" target="_blank">
+                                <!-- Changed to onclick handler for direct window open -->
+                                <button onclick="window.open('https://github.com/AndersonCorreya/FriendCircle', '_blank')" class="btn btn-project">
                                     <i class="fab fa-github me-2"></i>View on GitHub
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -175,15 +177,16 @@
                                 <h3 class="card-title">Minimalistic Weather App</h3>
                                 <p class="card-text">A clean, intuitive weather application that provides accurate forecasts with a focus on simplicity and beautiful visualization.</p>
                                 <div class="tech-stack">
-                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">Flutter</span>
+                                    <span class="tech-badge">Dart</span>
                                     <span class="tech-badge">Weather API</span>
-                                    <span class="tech-badge">CSS3</span>
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <a href="https://github.com/AndersonCorreya/Minimalistic-Weather-App" class="btn btn-project" target="_blank">
+                                <!-- Changed to onclick handler for direct window open -->
+                                <button onclick="window.open('https://github.com/AndersonCorreya/Minimalistic-Weather-App', '_blank')" class="btn btn-project">
                                     <i class="fab fa-github me-2"></i>View on GitHub
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -227,7 +230,7 @@
                             </div>
                             <h3>LinkedIn</h3>
                             <p>Connect with me professionally</p>
-                            <a href="https://www.linkedin.com/in/andersoncorreya14/" class="contact-link" target="_blank">
+                            <a href="https://www.linkedin.com/in/andersoncorreya14/" class="contact-link" target="_blank" rel="noopener noreferrer">
                                 linkedin.com/in/andersoncorreya14
                             </a>
                         </div>
@@ -239,7 +242,7 @@
                             </div>
                             <h3>GitHub</h3>
                             <p>Check out my code repositories</p>
-                            <a href="https://github.com/AndersonCorreya" class="contact-link" target="_blank">
+                            <a href="https://github.com/AndersonCorreya" class="contact-link" target="_blank" rel="noopener noreferrer">
                                 github.com/AndersonCorreya
                             </a>
                         </div>
@@ -296,10 +299,10 @@
                         <span class="logo-dot">.</span>
                     </div>
                     <div class="footer-social my-3">
-                        <a href="https://github.com/AndersonCorreya" target="_blank" aria-label="GitHub" class="social-icon-footer">
+                        <a href="https://github.com/AndersonCorreya" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-footer">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/andersoncorreya14/" target="_blank" aria-label="LinkedIn" class="social-icon-footer">
+                        <a href="https://www.linkedin.com/in/andersoncorreya14/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-footer">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="mailto:bervincorreya@gmail.com" aria-label="Email" class="social-icon-footer">
@@ -320,6 +323,19 @@
             alert('Thank you for your message! I will get back to you soon.');
             this.reset();
         });
+
+        // Function to directly scroll to a section by ID
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                // Calculate position with offset for navbar
+                const offsetTop = section.getBoundingClientRect().top + window.pageYOffset - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
     </script>
 </body>
 </html>
