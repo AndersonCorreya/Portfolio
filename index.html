@@ -3,92 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Anderson Correya | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <link
-    rel="stylesheet"
-    href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id = "main" class = "gradient-background">
-    <section id="first">
-    <div class="container">
-        <div class="px-4 py-5 my-5 text-center mt-0">
-            <img class = "profilepicture img-fluid border-dark" src = "./prof.png" alt = "profile picture">
-            <h1 class=" name display-5 fw-bold text-body-emphasis">Hi, I'm <span class="namecool">Anderson</span></h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="description lead mb-4 ">Aspiring engineer in final year of studies, passionate about applying technical skills to solve real-world problems. Eager to put knowledge into practice through internships and projects.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="https://youtu.be/6JHu3b-pbh8?si=RdZ7M3RHf9DTNmDB" class="btn btn-info btn-dark" role="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-music" viewBox="0 0 16 16">
-                        <path d="M11 6.64a1 1 0 0 0-1.243-.97l-1 .25A1 1 0 0 0 8 6.89v4.306A2.6 2.6 0 0 0 7 11c-.5 0-.974.134-1.338.377-.36.24-.662.628-.662 1.123s.301.883.662 1.123c.364.243.839.377 1.338.377s.974-.134 1.338-.377c.36-.24.662-.628.662-1.123V8.89l2-.5z"/>
-                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-                      </svg>
-                    Here's my favourite song at the moment</a>
-              </div>
-            </div>
-          </div>
-    </div>
- </section>
-
-
- <section id="second">
-    <div class="container">
-        <div class="container px-4 py-5 mt-0" id="featured-3">
-            <h2 class="pb-2 border-bottom border-dark">Content</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 ">
-              <div class="feature col">
-                <div class="icon feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                        <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
-                        <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/>
-                      </svg>
+    <div id="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <span class="logo-text">Anderson</span>
+                    <span class="logo-dot">.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary-outline" href="#contact">Get In Touch</a>
+                        </li>
+                    </ul>
                 </div>
-                <h3 class="fs-2 text-body-emphasis">Github</h3>
-                <p>Explore my latest projects and contributions on GitHub.</p>
-                <a href="https://github.com/AndersonCorreya" class="icon-link">
-                  Click Here!
-                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                </a>
-              </div>
-              <div class="feature col">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                        <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
-                        <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-                      </svg>
-                </div>
-                <h3 class="fs-2 text-body-emphasis">Contact Me</h3>
-                <p>Stay updated and connect with me through the following platforms</p>
-                <a href="https://www.linkedin.com/in/andersoncorreya14/" class="icon-link">
-                  Linkedin 
-                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                </a>
-                <a href="mailto:bervincorreya@gmail.com" class="icon-link">
-                  Mail 
-                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                </a>
-                <a href="https://github.com/AndersonCorreya" class="icon-link">
-                  Github 
-                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                </a>
-              </div>
             </div>
-          </div>
+        </nav>
 
+        <!-- Hero Section -->
+        <section id="hero" class="gradient-primary">
+            <div class="container">
+                <div class="row align-items-center min-vh-80">
+                    <div class="col-lg-6 order-lg-2 text-center text-lg-end">
+                        <div class="profile-wrapper">
+                            <img class="profilepicture img-fluid" src="./prof.png" alt="Anderson Correya">
+                            <div class="blob-shape"></div>
+                            <div class="circle-shape"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1 text-center text-lg-start mt-5 mt-lg-0">
+                        <span class="pre-title">Hello, I'm</span>
+                        <h1 class="hero-title fw-bold mb-4">
+                            Anderson Correya<span class="dot">.</span>
+                        </h1>
+                        <p class="description mb-4">Aspiring engineer in final year of studies, passionate about applying technical skills to solve real-world problems. Eager to put knowledge into practice through internships and projects.</p>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                        <div class="social-icons mt-5">
+                            <a href="https://github.com/AndersonCorreya" target="_blank" aria-label="GitHub" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/andersoncorreya14/" target="_blank" aria-label="LinkedIn" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:bervincorreya@gmail.com" aria-label="Email" class="social-icon">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,85.3C672,75,768,85,864,106.7C960,128,1056,160,1152,154.7C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row section-header">
+                    <div class="col-md-6">
+                        <h2 class="section-title">About Me</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-text">
+                            <p class="lead">I'm a passionate engineering student with a focus on creating innovative solutions to real-world problems.</p>
+                            <p>My journey in technology has equipped me with a strong foundation in technical skills and a keen eye for detail. I believe in continuous learning and pushing the boundaries of what's possible through creative problem-solving.</p>
+                            <div class="skills-container">
+                                <h3 class="skills-title">My Skills</h3>
+                                <div class="skill-pills">
+                                    <span class="skill-pill">Application Development</span>
+                                    <span class="skill-pill">Flutter</span>
+                                    <span class="skill-pill">Dart</span>
+                                    <span class="skill-pill">Kotlin</span>
+                                    <span class="skill-pill">Web Development</span>
+                                    <span class="skill-pill">AI/ML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-card">
+                            <div class="card-decoration"></div>
+                            <div class="about-content">
+                                <h3 class="mb-3">Education</h3>
+                                <div class="education-item">
+                                    <h4>Bachelor of Engineering</h4>
+                                    <p class="mb-1">Expected Graduation: 2025</p>
+                                    <p>Final year of studies with a focus on applying engineering principles to create impactful solutions.</p>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="./resume.pdf" download class="btn btn-outline-primary">Download CV</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 gradient-secondary">
+            <div class="container">
+                <div class="row section-header">
+                    <div class="col-md-6">
+                        <h2 class="section-title text-white">Projects</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-divider light"></div>
+                    </div>
+                </div>
+                <div class="row g-4 py-4">
+                    <div class="col-md-6">
+                        <div class="project-card h-100">
+                            <div class="project-img">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">FriendCircle</h3>
+                                <p class="card-text">A social networking platform that connects people with similar interests. Features include real-time messaging, user profiles, and interest-based communities.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">Node.js</span>
+                                    <span class="tech-badge">MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/AndersonCorreya/FriendCircle" class="btn btn-project" target="_blank">
+                                    <i class="fab fa-github me-2"></i>View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card h-100">
+                            <div class="project-img">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Minimalistic Weather App</h3>
+                                <p class="card-text">A clean, intuitive weather application that provides accurate forecasts with a focus on simplicity and beautiful visualization.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">Weather API</span>
+                                    <span class="tech-badge">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/AndersonCorreya/Minimalistic-Weather-App" class="btn btn-project" target="_blank">
+                                    <i class="fab fa-github me-2"></i>View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,197.3C672,192,768,160,864,170.7C960,181,1056,235,1152,229.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="row section-header">
+                    <div class="col-md-6">
+                        <h2 class="section-title">Contact Me</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+                <div class="row g-4 py-4">
+                    <div class="col-lg-4">
+                        <div class="contact-info-card contact-email">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>Get in touch with me via email</p>
+                            <a href="mailto:bervincorreya@gmail.com" class="contact-link">
+                                bervincorreya@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-info-card contact-linkedin">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me professionally</p>
+                            <a href="https://www.linkedin.com/in/andersoncorreya14/" class="contact-link" target="_blank">
+                                linkedin.com/in/andersoncorreya14
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-info-card contact-github">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>Check out my code repositories</p>
+                            <a href="https://github.com/AndersonCorreya" class="contact-link" target="_blank">
+                                github.com/AndersonCorreya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="contact-form-card">
+                            <h3 class="text-center mb-4">Send Me a Message</h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                            <label for="message">Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer gradient-primary text-center py-4">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <span class="logo-text text-white">Anderson</span>
+                        <span class="logo-dot">.</span>
+                    </div>
+                    <div class="footer-social my-3">
+                        <a href="https://github.com/AndersonCorreya" target="_blank" aria-label="GitHub" class="social-icon-footer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andersoncorreya14/" target="_blank" aria-label="LinkedIn" class="social-icon-footer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:bervincorreya@gmail.com" aria-label="Email" class="social-icon-footer">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="mb-0 text-white">© 2025 Anderson Correya. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-</div> 
 
-
- </section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
